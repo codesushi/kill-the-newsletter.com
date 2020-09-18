@@ -53,8 +53,8 @@
         "NODE_ENV": "production",
         "WEB_PORT": "8000",
         "EMAIL_PORT": "25",
-        "BASE_URL": "https://kill-the-newsletter.com",
-        "EMAIL_DOMAIN": "kill-the-newsletter.com",
+        "BASE_URL": "https://ktn.codesushi.work",
+        "EMAIL_DOMAIN": "ktn.codesushi.work",
         "ISSUE_REPORT": "mailto:kill-the-newsletter@leafac.com"
       }
     },
@@ -66,9 +66,9 @@
   "deploy": {
     "production": {
       "user": "root",
-      "host": "kill-the-newsletter.com",
+      "host": "ktn.codesushi.work",
       "ref": "origin/master",
-      "repo": "git@github.com:leafac/kill-the-newsletter.com.git",
+      "repo": "git@github.com:codesushi/kill-the-newsletter.com.git",
       "path": "/root/kill-the-newsletter.com",
       "pre-setup": "(curl -sL https://deb.nodesource.com/setup_14.x | bash -) && apt install -y nodejs build-essential && (ssh -o StrictHostKeyChecking=no git@github.com || true)",
       "post-setup": "npm ci --production && npx pm2 startup",
